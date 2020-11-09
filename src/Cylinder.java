@@ -50,6 +50,12 @@ public class Cylinder extends Circle
         return super.getArea() * this.height;
     }
 
+    @Override
+    public double getArea()
+    {
+        return (2.0 * super.getArea()) + (2.0 * Math.PI * super.getRadius() * this.height);
+    }
+
     // TO DO: toString() method to the Cylinder class, which
     // overrides the toString() inherited from the superclass Circle
     @Override
